@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+header {
+	background-color: magenta;
+	color: white;
+	margin: 25px;
+}
+
+body {
+	margin: 18px;
+	color: orange;
+	background-color: grey;
+}
+
+#Box1 {
+	Height: auto;
+	width: 30px;
+	margin: 500 px;
+	top: 50px;
+	background-color: magenta;
+	width: 600px;
+	height: 700px;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+}

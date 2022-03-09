@@ -1,0 +1,104 @@
+<html>
+<style>
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>Seniorenbank</title>
+<link href="index.css" rel="stylesheet">
+<script src="InputJson.js" type="module"></script>
+</head>
+
+<body>
+	<header id="header">
+		<h1>Willkommen beim WebBanking</h1>
+	</header>
+	<br>
+
+	<div id="suche">
+		<div>
+			<p>Suche und Übernahme getätitigter Zahlungen</p>
+			<input id="eingabe" type="text" placeholder="Suchbegriff eingeben">
+		</div>
+		<br>
+		<div>
+			<button id="suchestarten">Suche starten</button>
+		</div>
+		<br> <br>
+	</div>
+	<div style="text-align: center">
+		<div id="ausgabe">
+			<div>
+				<p>Empfänger</p>
+				<input id="empfaenger" type="text"
+					placeholder="Wird aus JS beschrieben">
+			</div>
+
+
+			<div>
+				<p>BIC</p>
+				<input id="bic" type="text" placeholder="Wird aus JS beschrieben">
+			</div>
+
+
+			<div>
+				<p>iban</p>
+				<input id="iban" type="text" placeholder="Wird aus JS beschrieben">
+			</div>
+
+
+			<div>
+				<p>Betrag</p>
+			</div>
+			<input id="betrag" type="text" placeholder="Wird aus JS beschrieben">
+		</div>
+
+
+		<div>
+			<p>Verwendungszweck</p>
+			<input id="verwendungszweck" type="text"
+				placeholder="Wird aus JS beschrieben">
+		</div>
+
+
+		<div>
+			<p>Datum</p>
+			<input id="datum" type="text" placeholder="Wird aus JS beschrieben">
+		</div>
+
+		<div>
+			<button id="absenden">Absenden</button>
+			<button id="update">Update</button>
+			<button id="loeschen">Loeschen</button>
+		</div>
+
+
+		<br>
+		<script src="index.js" type="module"></script>
+		<div style="text-align: center">
+			<a href="index.html">
+				<button id=hauptmenue>Zurück zum Hauptmenü</button>
+			</a>
+		</div>
+		<footer>
+			<div class="footer">
+				<p>Verband der Senioren-Banken NRW. Alle Rechte vorbehalten</p>
+				<script src="index.js"></script>
+				<script>
+					DatumUhrzeit();
+				</script>
+
+
+			</div>
+		</footer>
+</body>
+
+</html>

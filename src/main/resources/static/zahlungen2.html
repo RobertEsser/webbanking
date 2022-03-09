@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<style>
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+</style>
+<head>
+<meta charset="UTF-8">
+<title>WebBanking</title>
+<link href="index.css" rel="stylesheet">
+<script src="zahlungen.js" type="module"></script>
+<style>
+table {
+	border: 1px solid black
+}
+
+td, th {
+	padding: 10px;
+	border: 1px solid black;
+}
+</style>
+</head>
+
+<body>
+	<header id="header">
+		<h1>Willkommen beim WebBanking</h1>
+	</header>
+	<br>
+	<div id="text5">
+		<p>Hier werden Ihnen alle Kontoauszüge angezeigt</p>
+	</div>
+	<br>
+
+	<table id="tabelle">
+		<thead>
+			<tr>
+				<th>Empfänger</th>
+				<th>Betrag</th>
+				<th>IBAN</th>
+				<th>BIC</th>
+				<th>Verwendungszweck</th>
+				<th>Datum</th>
+			</tr>
+		</thead>
+		<tbody id="tabelleZahlungen">
+
+		</tbody>
+	</table>
+	<br>
+
+
+	<div>
+		<div>
+			<br> <a href="index.html">
+				<button id=hauptmenue>Zurück zum Hauptmenü</button>
+			</a>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<p>Verband der Senioren-Banken NRW. Alle Rechte vorbehalten</p>
+			<script src="index.js"></script>
+			<script>
+				DatumUhrzeit();
+			</script>
+	</footer>
+</body>
+</html>
